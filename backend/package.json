@@ -4,25 +4,39 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:dev": "nest start --watch",
+    "build": "nest build",
+    "start:prod": "node dist/src/main.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+    "@nestjs/cli": "^12.0.7",
+    "@types/express": "^5.0.6",
     "@types/node": "^26.6.2",
     "ts-node": "^10.9.2",
     "tsx": "^4.23.15",
     "typescript": "^6.0.3"
   },
   "dependencies": {
+    "@nestjs/common": "^12.1.0",
+    "@nestjs/config": "^12.0.1",
+    "@nestjs/core": "^12.1.0",
+    "@nestjs/platform-express": "^12.1.0",
     "@prisma/adapter-pg": "^7.10.0",
     "@prisma/client": "7.8.0",
     "@types/bcrypt": "^6.0.0",
     "bcrypt": "^6.0.0",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.15.1",
     "dotenv": "^18.0.4",
+    "helmet": "^8.3.0",
+    "joi": "^18.2.9",
     "pg": "^8.23.0",
-    "prisma": "7.8.0"
+    "prisma": "7.8.0",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.2"
   }
 }
